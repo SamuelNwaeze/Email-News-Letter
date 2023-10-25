@@ -1,0 +1,303 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Amiri Quran Colored", sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+
+  --font: https://fonts.google.com/specimen/Amiri?query=Amiri;
+  --pryColor: #07ce9e;
+  --secColor: #044535;
+
+  @import url(var(--font));
+}
+
+body {
+  background-color: #151414;
+  overflow-x: hidden;
+}
+
+/* background elements styles */
+
+.blurcircle {
+  background-color: var(--pryColor);
+  width: 32.6rem;
+  height: 32.6rem;
+  opacity: 0.3;
+  filter: blur(45px);
+  z-index: -3;
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: -50%;
+  left: -15%;
+}
+
+.shape1 {
+  border-radius: 5%;
+  background-color: var(--pryColor);
+
+  width: 1144px;
+  height: 1144px;
+  transform: rotate(33.476deg);
+  flex-shrink: 0;
+  z-index: -3;
+  position: fixed;
+  right: -60%;
+  bottom: -40%;
+}
+
+.shape2 {
+  border-radius: 5%;
+  background-color: var(--secColor);
+
+  z-index: -3;
+  width: 1144px;
+  height: 1144px;
+  transform: rotate(33.476deg);
+  flex-shrink: 0;
+
+  position: fixed;
+  right: -63%;
+  bottom: -38%;
+}
+
+/* Nav Bar style */
+
+.navBar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 73%;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo {
+  width: 10.8125rem;
+  height: 8.3125rem;
+  flex-shrink: 0;
+
+  position: relative;
+  top: -2%;
+  left: 1%;
+}
+
+.subscribeNav {
+  display: none;
+  top: 10%;
+  right: 5%;
+  align-items: baseline;
+  display: flex;
+  gap: 0.3rem;
+}
+
+.subscribeDot {
+  background-color: var(--pryColor);
+  border-radius: 50%;
+  border: none;
+  width: 0.31rem;
+  height: 0.31rem;
+}
+
+.subscribeText {
+  color: white;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+/*Hero section styles*/
+.hero {
+  text-align: start;
+  margin-top: 3.75rem;
+  margin-left: 5.63rem;
+}
+
+.heroHeader {
+  font-size: 5.31rem;
+  font-weight: 400;
+  color: white;
+}
+
+.heroH1 {
+  color: var(--pryColor);
+}
+
+.heroText {
+  color: white;
+  font-size: 1.87rem;
+  font-weight: 400;
+  width: 42%;
+}
+
+.heroTextHightlight {
+  color: var(--pryColor);
+}
+
+
+
+.subscribeButton {
+  display: none;
+  margin-top: 1.87rem;
+  width: 13.1rem;
+  height: 3.75rem;
+  border-radius: 2.81rem;
+  border: none;
+  background: #044535;
+  color: white;
+  font-size: 1.87rem;
+  font-weight: 400;
+  box-shadow: -4px 4px 10px 0px #07ce9e;
+}
+
+/*Tech Sammy HQ logo styles*/
+#techSammyHQlogo{
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+}
+
+#techSammyHQlogoMobile{
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .blurcircle {
+  background-color: var(--pryColor);
+  width: 18.8rem;
+  height: 18.8rem;
+  opacity: 0.3;
+  filter: blur(45px);
+  z-index: -3;
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: -5%;
+  left: -15%;
+}
+
+.shape1 {
+  border-radius: 20%;
+  background-color: var(--pryColor);
+
+  width: 58rem;
+  height: 58rem;
+  transform: rotate(33.476deg);
+  flex-shrink: 0;
+  z-index: -3;
+  position: fixed;
+  left: 60%;
+  bottom: -32%;
+}
+
+.shape2 {
+  border-radius: 20%;
+  background-color: var(--secColor);
+
+  z-index: -3;
+  width: 58rem;
+  height: 58rem;
+  transform: rotate(33.476deg);
+  flex-shrink: 0;
+
+  position: fixed;
+  left: 70%;
+  bottom: -32%;
+}
+
+/*Tech Sammy HQ logo styles*/
+
+#techSammyHQlogo{
+  display: none;
+}
+
+#techSammyHQlogoMobile{
+  display: block;
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+}
+
+/* Nav Bar style */
+
+.navBar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  margin-left: 1rem;
+  gap: 73%;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo {
+  width: 10.8125rem;
+  height: 8.3125rem;
+  flex-shrink: 0;
+  
+  position: relative;
+  top: -2%;
+  left: 1%;
+}
+
+.subscribeNav {
+  display: none;
+  top: 10%;
+  right: 5%;
+  align-items: baseline;
+  display: flex;
+  gap: 0.3rem;
+}
+
+.subscribeDot {
+  display: none;
+  background-color: var(--pryColor);
+  border-radius: 50%;
+  border: none;
+  width: 0.31rem;
+  height: 0.31rem;
+}
+
+.subscribeText {
+  display: none;
+  color: white;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+/*Hero section styles*/
+.hero {
+  
+  justify-content: center;
+  text-align: start;
+  margin-top: 30px;
+  margin-left: 45px;
+}
+
+.heroHeader {
+  font-size: 2.81rem;
+  font-weight: 400;
+  color: white;
+}
+
+.heroH1 {
+  color: var(--pryColor);
+}
+
+.heroText {
+  color: white;
+  font-size: 0.94rem;
+  font-weight: 400;
+  width: 82%;
+}
+
+.heroTextHightlight {
+  color: var(--pryColor);
+}
+}
