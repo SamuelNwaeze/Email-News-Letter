@@ -108,8 +108,12 @@ body {
   text-align: center;
   font-size: 1.25rem;
   font-weight: 400;
+  text-decoration: none;
 }
 
+.subscribeText:hover{
+  color: var(--pryColor);
+}
 /*Hero section styles*/
 .hero {
   text-align: start;
@@ -144,10 +148,14 @@ body {
   height: 3.75rem;
   border-radius: 2.81rem;
   border: none;
-  background: #044535;
+  background: var(--pryColor);
   color: white;
   font-size: 1.87rem;
   font-weight: 400;
+}
+
+.subscribeButton:hover{
+  background-color: var(--secColor);
   box-shadow: -4px 4px 10px 0px var(--pryColor);
 }
 
@@ -306,10 +314,15 @@ body {
   height: 2.21rem;
   border-radius: 2.81rem;
   border: none;
-  background: #044535;
+  background: var(--pryColor);
   color: white;
   font-size: 0.94rem;
   font-weight: 400;
+  box-shadow: -4px 4px 10px 0px var(--pryColor);
+}
+
+.subscribeButton:hover{
+  background-color: var(--secColor);
   box-shadow: -4px 4px 10px 0px var(--pryColor);
 }
 

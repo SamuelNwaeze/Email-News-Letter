@@ -63,14 +63,16 @@
           />
         </svg>
 
-        <div class="form">
+        <form action="app.js" class="form" method="post">
           <div class="formInput">
             <p class="formTitle">First Name:</p>
             <input
               type="text"
               placeholder="First Name"
               class="firstName"
+              name="firstName"
               required
+              autofocus
             />
           </div>
 
@@ -79,6 +81,7 @@
             <input
               type="text"
               placeholder="Last Name"
+              name="lastName"
               class="lastName"
               required
             />
@@ -89,12 +92,14 @@
             <input
               type="email"
               placeholder="Email Address"
+              name="email"
               class="emailAddress"
+              required
             />
           </div>
 
           <button type="submit" class="subscribeButton">Subscribe</button>
-        </div>
+        </form>
       </div>
     </section>
     <!-- <img src="./Images/TECH SAMMY HQTSH.svg" alt="Tech Sammy HQ logo" /> -->

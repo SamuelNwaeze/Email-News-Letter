@@ -119,6 +119,10 @@ body {
   font-weight: 400;
 }
 
+.subscribeText:hover{
+  color: var(--pryColor);
+}
+
 /*Hero section styles*/
 .hero {
   display: flex;
@@ -179,7 +183,7 @@ body {
   right: 50%;
 }
 
-.techSammyHQLogoMobile{
+.techSammyHQlogoMobile{
   display: none;
 }
 
@@ -213,11 +217,15 @@ input{
   height: 3.75rem;
   border-radius: 2.81rem;
   border: none;
-  background: #044535;
+  background: var(--pryColor);
   color: white;
   font-size: 1.87rem;
   font-weight: 400;
-  box-shadow: -4px 4px 10px 0px #07ce9e;
+}
+
+.subscribeButton:hover{
+  background-color: var(--secColor);
+  box-shadow: -4px 4px 10px 0px var(--pryColor);
 }
 
 @media only screen and (max-width: 992px) {
@@ -413,10 +421,14 @@ input{
   height: 2.21rem;
   border-radius: 2.81rem;
   border: none;
-  background: #044535;
+  background: var(--pryColor);
   color: white;
   font-size: 1rem;
   font-weight: 400;
+  box-shadow: -4px 4px 10px 0px var(--pryColor);
+}
+.subscribeButton:hover{
+  background-color: var(--secColor);
   box-shadow: -4px 4px 10px 0px var(--pryColor);
 }
 }
