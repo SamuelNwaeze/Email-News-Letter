@@ -1,5 +1,5 @@
-const subscribeButton = document.getElementsByClassName("subscribeButton")[0];
-const subscribeText = document.getElementsByClassName("subscribeText")[0];
+const subscribeButton = document.getElementsByid("subscribeButton")[0];
+const subscribeText = document.getElementsByid("subscribeText")[0];
 
 subscribeButton.addEventListener("click", (NewPage) => {
   const signupPage = "signup.html";

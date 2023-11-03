@@ -6,14 +6,16 @@
 
     <title>Newsletter Signup Page</title>
 
-    <link rel="shortcut icon" href="./Images/LOGO.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/Images/LOGO.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="./Public/css/signup.css" />
+    <link rel="stylesheet" href="/css/signup.css" />
   </head>
 
   <body>
     <container class="navBar">
-      <img src="./Images/LOGO.png" alt="Tech sammy HQ logo" class="logo" />
+      <a href="/"
+        ><img src="/Images/LOGO.png" alt="Tech sammy HQ logo" class="logo"
+      /></a>
 
       <div class="subcribeNav">
         <div class="subcribeDot"></div>
@@ -67,6 +69,7 @@
           <div class="formInput">
             <p class="formTitle">First Name:</p>
             <input
+              id="firstName"
               type="text"
               placeholder="First Name"
               class="firstName"
@@ -79,6 +82,7 @@
           <div class="formInput">
             <p class="formTitle">Last Name:</p>
             <input
+              id="lastName"
               type="text"
               placeholder="Last Name"
               name="lastName"
@@ -90,6 +94,7 @@
           <div class="formInput">
             <p class="formTitle">Email Address:</p>
             <input
+              id="email"
               type="email"
               placeholder="Email Address"
               name="email"
@@ -111,6 +116,6 @@
       <div class="shape2"></div>
     </section>
 
-    <script src="/signup.js"></script>
+    <script src="/scripts/signup.js"></script>
   </body>
 </html>

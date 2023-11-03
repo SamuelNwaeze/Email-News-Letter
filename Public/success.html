@@ -4,36 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Newsletter Landing Page</title>
+    <title>Newsletter Success Page</title>
 
-    <link rel="shortcut icon" href="./Images/LOGO.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/Images/LOGO.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="./Public/css/styles.css" />
+    <link rel="stylesheet" href="/css/success.css" />
   </head>
 
   <body>
     <container class="navBar">
-      <a href="/">
-        <img src="./Images/LOGO.png" alt="Tech sammy HQ logo" class="logo" />
-      </a>
+      <a href="/"
+        ><img src="/Images/LOGO.png" alt="Tech sammy HQ logo" class="logo"
+      /></a>
 
       <div class="subcribeNav">
         <div class="subcribeDot"></div>
 
-        <a href="#" class="subscribeText">SUBSCRIBE</a>
+        <p class="subscribeText">WELCOME</p>
       </div>
     </container>
 
     <section class="hero">
-      <h1 class="heroHeader">Get the latest</h1>
-      <h1 class="heroHeader heroH1">TECH UPDATES</h1>
+      <h1 class="heroHeader">SUCCESSFULLY</h1>
+      <h1 class="heroHeader heroH1">SUBSCRIBED!</h1>
 
       <p class="heroText">
-        Subscribe to our News letter to get latest Tech Updates
-        <span class="heroTextHightlight heroText">Daily</span>.
+        <span class="heroTextHightlight heroText">Welcome!</span>
+        You have successful subcribed to
+        <span class="heroTextHightlight heroText">TECH SAMMY HQ</span> News
+        letter.
       </p>
 
-      <button type="submit" class="subscribeButton">Subscribe</button>
+      <form action="app.js" method="get">
+        <button type="submit" class="subscribeButton">Subscribe</button>
+      </form>
     </section>
 
     <!-- <img src="./Images/TECH SAMMY HQTSH.svg" alt="Tech Sammy HQ logo" /> -->
@@ -73,7 +77,5 @@
       <div class="shape1"></div>
       <div class="shape2"></div>
     </section>
-
-    <script src="./index.js"></script>
   </body>
 </html>
