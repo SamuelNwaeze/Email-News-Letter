@@ -1,15 +1,30 @@
-const form = document.getElementsByid("form");
+//@ts-ignore
+const firstName = document.getElementById("firstName");
+const lastName = document.getElementById("lastName");
+const email = document.getElementById("emailAddress");
+const form = document.getElementById("form");
 
-const firstName = document.getElementsByid("firstName");
+//@ts-ignore
+form.addEventListener("submit", (valid) => {
+  // Regular expression for validating email format
+  const emailFormat = /^\S+@\S+\.\S+$/;
 
-const lastName = document.getElementsByid("lastName");
+  if (firstName.value.trim() === "") {
+    alert("Please enter your first name");
+    return false;
+  }
 
-const email = document.getElementsByid("email");
+  if (lastName.value.trim() === "") {
+    alert("Please enter your last name");
+    return false;
+  }
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  fName = firstName.value;
-
-  console.log(fName);
+  if (email.value.trim() === "") {
+    alert("Please enter your email");
+    return false;
+  } else if (!emailFormat.test(email.value)) {
+    alert("Please enter a valid email address");
+    valid.preventDefault();
+    return false;
+  }
 });

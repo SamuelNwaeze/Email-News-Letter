@@ -6,15 +6,15 @@
 
     <title>Newsletter Signup Page</title>
 
-    <link rel="shortcut icon" href="/Images/LOGO.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="Images/LOGO.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="/css/signup.css" />
+    <link rel="stylesheet" href="css/signup.css" />
   </head>
 
   <body>
     <container class="navBar">
       <a href="/"
-        ><img src="/Images/LOGO.png" alt="Tech sammy HQ logo" class="logo"
+        ><img src="Images/LOGO.png" alt="Tech sammy HQ logo" class="logo"
       /></a>
 
       <div class="subcribeNav">
@@ -65,16 +65,15 @@
           />
         </svg>
 
-        <form action="success.html" class="form" method="post">
+        <form action="/signup.html" class="form" id="form" method="post">
           <div class="formInput">
             <p class="formTitle">First Name:</p>
             <input
-              id="firstName"
               type="text"
               placeholder="First Name"
               class="firstName"
+              id="firstName"
               name="firstName"
-              required
               autofocus
             />
           </div>
@@ -82,24 +81,22 @@
           <div class="formInput">
             <p class="formTitle">Last Name:</p>
             <input
-              id="lastName"
               type="text"
               placeholder="Last Name"
               name="lastName"
               class="lastName"
-              required
+              id="lastName"
             />
           </div>
 
           <div class="formInput">
             <p class="formTitle">Email Address:</p>
             <input
-              id="email"
               type="email"
               placeholder="Email Address"
               name="email"
               class="emailAddress"
-              required
+              id="emailAddress"
             />
           </div>
 
@@ -116,6 +113,6 @@
       <div class="shape2"></div>
     </section>
 
-    <script src="/scripts/signup.js"></script>
+    <script src="scripts/signup.js"></script>
   </body>
 </html>

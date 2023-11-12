@@ -1,14 +1,13 @@
-const subscribeButton = document.getElementsByid("subscribeButton")[0];
-const subscribeText = document.getElementsByid("subscribeText")[0];
+const button = document.getElementById("subscribeButton");
+const text = document.getElementById("subscribeText");
 
-subscribeButton.addEventListener("click", (NewPage) => {
-  const signupPage = "signup.html";
-
-  window.location.href = signupPage;
+//@ts-ignore
+button.addEventListener("click", () => {
+  const signup = "/signup.html";
+  window.location.href = signup;
 });
 
-subscribeText.addEventListener("click", (NewPage) => {
-  const signupPage = "signup.html";
-
-  window.location.href = signupPage;
+text.addEventListener("click", () => {
+  const signup = "/signup.html";
+  window.location.href = signup;
 });

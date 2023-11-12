@@ -6,7 +6,7 @@
 
     <title>Newsletter Landing Page</title>
 
-    <link rel="shortcut icon" href="/Images/LOGO.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="Images/LOGO.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -14,13 +14,19 @@
   <body>
     <container class="navBar">
       <a href="/">
-        <img src="/Images/LOGO.png" alt="Tech sammy HQ logo" class="logo" />
+        <img src="Images/LOGO.png" alt="Tech sammy HQ logo" class="logo" />
       </a>
 
       <div class="subcribeNav">
         <div class="subcribeDot"></div>
 
-        <a href="#" id="subscribeText" class="subscribeText">SUBSCRIBE</a>
+        <a
+          href="#"
+          name="subscribeText"
+          id="subscribeText"
+          class="subscribeText"
+          >SUBSCRIBE</a
+        >
       </div>
     </container>
 
@@ -33,7 +39,12 @@
         <span class="heroTextHightlight heroText">Daily</span>.
       </p>
 
-      <button type="submit" id="subscribeButton" class="subscribeButton">
+      <button
+        type="submit"
+        id="subscribeButton"
+        name="subscribeButton"
+        class="subscribeButton"
+      >
         Subscribe
       </button>
     </section>
