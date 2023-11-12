@@ -272,11 +272,11 @@ input {
 
   /*Tech Sammy HQ logo styles*/
 
-  #techSammyHQlogo {
+  .techSammyHQlogo {
     display: none;
   }
 
-  #techSammyHQlogoMobile {
+  .techSammyHQlogoMobile {
     display: block;
     position: fixed;
     right: 5%;
@@ -383,10 +383,6 @@ input {
     top: 0;
     margin-right: 130%;
     margin-left: 1%;
-  }
-
-  .techSammyHQLogo {
-    display: none;
   }
 
   .form {

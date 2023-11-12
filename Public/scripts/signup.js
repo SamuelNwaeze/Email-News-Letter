@@ -25,6 +25,6 @@ form.addEventListener("submit", (valid) => {
   } else if (!emailFormat.test(email.value)) {
     alert("Please enter a valid email address");
     valid.preventDefault();
-    return false;
+    return true;
   }
 });
