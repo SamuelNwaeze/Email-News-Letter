@@ -11,20 +11,21 @@ form.addEventListener("submit", (valid) => {
 
   if (firstName.value.trim() === "") {
     alert("Please enter your first name");
-    return false;
+    valid.preventDefault();
   }
 
   if (lastName.value.trim() === "") {
     alert("Please enter your last name");
-    return false;
+    valid.preventDefault();
   }
 
   if (email.value.trim() === "") {
     alert("Please enter your email");
-    return false;
+    valid.preventDefault();
   } else if (!emailFormat.test(email.value)) {
     alert("Please enter a valid email address");
     valid.preventDefault();
-    return true;
   }
+
+  return false;
 });
